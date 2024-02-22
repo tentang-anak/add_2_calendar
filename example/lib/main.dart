@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey =
       GlobalKey<ScaffoldMessengerState>();
 
-  MyApp({super.key});
+  MyApp({Key? key}) : super(key: key);
 
   Event buildEvent({Recurrence? recurrence}) {
     return Event(
